@@ -25,7 +25,32 @@
     justify-content: center;
     align-items: center;
 }
-  @mixin sota-swp($bg) {
+@mixin sotaRipple {
+    .ripple{
+        background-color: red;
+        position: relative;
+        overflow: hidden; 
+        &::before{
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.6);
+            content:'';
+            position: absolute;
+            top: 50%; left: 50%;
+            width:0; height:0;
+        }
+        &:focus{
+            &:before {
+                transition: all 0.5s ease-out;
+                opacity:0;
+                width:160px;
+                height:160px;
+                margin-top:-80px;
+                margin-left:-80px;
+              }
+        }
+    }
+}
+@mixin sota-swp($bg) {
     &-bullet{
         outline: none;
         width: 27px;
