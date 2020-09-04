@@ -31,6 +31,29 @@ $(document).ready(function () {
             },
         }
     });
+    
+    var swiperOurWork = new Swiper('.swiper-our-work', {
+        slidesPerView: 2,
+        spaceBetween: 40,
+        pagination: {
+            el: '.pagination-work',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.work-next',
+            prevEl: '.work-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+        }
+    });
     var swiperAboutus = new Swiper('.swiper-aboutus', {
         slidesPerView: 2,
         spaceBetween: 10,
