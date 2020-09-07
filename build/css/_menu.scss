@@ -20,7 +20,7 @@ $font-menu: SVN-Gilroy-Light; /*font-family menu main*/
 
 // style menu cấp 1
 @mixin style-level-1 {
-    padding: 20px 23px;
+    padding: 20px 18px;
     font-size: 14px;
     color: #0d0d0d;
     transition: ease-in-out 0.2s;
@@ -275,7 +275,20 @@ $bg-active-mobile: #00194a;
     &__nav {
       @media (min-width: 992px){
         position: relative;
+        margin-left: 110px;
         z-index: 1;
+      }
+      .contact-us-button {
+        background: #1b9dca;
+        border-radius: 4px;
+        color: #fff!important;
+        padding-top: 10px!important;
+        padding-bottom: 10px!important;
+        margin-left: 31px;
+        margin-top: 10px;
+        &::before {
+            content: none!important;
+        }
       }
         .mainMenu__navCont {
             background: #fff;
