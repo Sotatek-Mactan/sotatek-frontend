@@ -34,7 +34,7 @@ $(document).ready(function () {
     
     var swiperOurWork = new Swiper('.swiper-our-work', {
         slidesPerView: 2,
-        spaceBetween: 40,
+        spaceBetween: 100,
         pagination: {
             el: '.pagination-work',
             clickable: true,
@@ -50,7 +50,7 @@ $(document).ready(function () {
             },
             768: {
                 slidesPerView: 2,
-                spaceBetween: 40,
+                spaceBetween: 100,
             },
         }
     });
