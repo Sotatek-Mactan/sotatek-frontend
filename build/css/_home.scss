@@ -287,8 +287,33 @@
     }
 }
 .swiper-flip{
-    .swiper-pagination{
-        @include sota-swp(#000d31);
+    // .swiper-pagination{
+    //     @include sota-swp(#000d31);
+    // }
+    .swiper-pagination-bullet {
+        background: none;
+        width: auto;
+        height: auto;
+    }
+    .swiper-pagination-bullet-active .path{
+        display: inline-block !important;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 0;
+      animation: dash linear 120s;
+      animation-iteration-count: unset;
+    }
+    .path {
+        display: none;
+    }
+    
+    @keyframes dash {
+      from {
+        stroke-dashoffset: 1000;
+      }
+    
+      to {
+        stroke-dashoffset: 0;
+      }
     }
 }
 .sota-head{
