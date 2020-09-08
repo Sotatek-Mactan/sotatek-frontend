@@ -274,7 +274,7 @@ $bg-active-mobile: #00194a;
 .mainMenu {
     &__nav {
       @media (min-width: 992px){
-        position: relative;
+        // position: relative;
         margin-left: 110px;
         z-index: 1;
       }

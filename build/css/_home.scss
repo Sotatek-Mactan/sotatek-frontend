@@ -91,6 +91,11 @@
                         }
                     }
                 }
+                .nav-dropdown{
+                    @media (min-width: 992px) {
+                        display: none !important;   
+                    }
+                }
             }
         }
     }
@@ -136,6 +141,64 @@
             border-top-color: #475b87;
             vertical-align: .1em;
             border-top: .45em solid;
+        }
+    }
+    .mega{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #001742;
+        padding-top: 22px;
+        display: none;
+        .brd{
+            border-left: solid 1px rgba($color: #ffffff, $alpha: 0.2);
+        }
+        &-list{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li{
+                a{
+                    text-align: center;
+                    padding: 20px;
+                    display: block;
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: white;
+                    line-height: 30px;
+                    letter-spacing: 0;
+                    transition: ease-in-out 0.2s;
+                    &:hover{
+                        color: #229fcc;
+                        background-color: rgba($color: #ffffff, $alpha: 0.1);
+                    }
+                }
+                a.active{
+                    color: #229fcc;
+                    background-color: rgba($color: #ffffff, $alpha: 0.1);
+                }
+            }
+        }
+        &-content{
+            padding: 50px;
+            h2{
+                font-size: 30px;
+                line-height: 40px;
+                color: white;
+                font-family: SVN-Gilroy-Medium;
+            }
+            p{
+                font-size: 16px;
+                line-height: 28px;
+                color: white;
+                font-family: SVN-Gilroy-Light;
+            }
+        }
+    }
+    .mega.show{
+        @media (min-width: 992px) {
+            display: block;
         }
     }
 }
@@ -248,42 +311,43 @@
                     line-height: 20px;
                 }
             }
-            .btn-read-more{
-                background-color: #239ECA;
-                font-family: SVN-Gilroy-Bold;
-                font-size: 14px;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 2.15;
-                letter-spacing: normal;
-                color: #ffffff;
-                border-radius: 3px;
-                padding: 6px 45px;
-                @include sotaRipple;
-                @media (max-width: 767px) {
-                    padding: 2px 20px;
-                }
-                span{
-                    margin-right: 5px;
-                }
-                svg{
-                    vertical-align: baseline;
-                    transition: ease-in-out 0.2s;
-                }
-                &:hover{
-                    span{
-                        text-shadow: 0 0 2px white;
-                    }
-                    svg{
-                        transform: translateX(10px);
-                        transition: ease-in-out 0.2s;
-                    }
-                }
-            }
+            
         }
     }
     .swiper-pagination{
         @include sota-swp(#000d31);
+    }
+}
+.btn-read-more{
+    background-color: #239ECA;
+    font-family: SVN-Gilroy-Bold;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.15;
+    letter-spacing: normal;
+    color: #ffffff;
+    border-radius: 3px;
+    padding: 6px 45px;
+    @media (max-width: 767px) {
+        padding: 2px 20px;
+    }
+    span{
+        margin-right: 5px;
+    }
+    svg{
+        vertical-align: baseline;
+        transition: ease-in-out 0.2s;
+    }
+    &:hover{
+        span{
+            color: white;
+            text-shadow: 0 0 2px white;
+        }
+        svg{
+            transform: translateX(10px);
+            transition: ease-in-out 0.2s;
+        }
     }
 }
 .swiper-flip{
