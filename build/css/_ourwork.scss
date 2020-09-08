@@ -6,17 +6,25 @@
         .button-tech-filter {
             margin-top: 10px;
         }
+
+        .active {
+
+            background-color: #475b87;
+            color: #e1e8f5;
+        }
+
     }
 
     .button-tech-filter {
         border-radius: 3px;
         background-color: #e1e8f5;
-        font-family: SVN-Gilroy-Bold;
+        font-family: SVN-Gilroy-Medium;
         font-size: 14px;
         color: #475b87;
         padding: 3px 25px;
         border: none;
         margin-right: 5px;
+
 
     }
 
@@ -124,13 +132,16 @@
         border-top: 1px #efefef solid;
         padding-top: 43px;
         margin-bottom: 37px;
+
         .avt {
             position: relative;
         }
+
         .img-project {
             overflow: hidden;
             display: block;
             position: relative;
+
             img {
                 width: 100%;
             }
@@ -210,7 +221,7 @@
         }
 
         .detail {
-            font-family: SVN-Gilroy-Bold;
+            font-family: SVN-Gilroy-Medium;
 
             .title {
                 font-size: 12px;
@@ -265,6 +276,7 @@
                 padding-left: 14px;
             }
         }
+
         .page-link {
             font-family: SVN-Gilroy-Bold;
             font-size: 18px;
@@ -289,9 +301,11 @@
             color: #001742;
         }
     }
+
     .sota-banner-item {
         height: 100px;
     }
+
     .project {
         overflow: hidden;
         padding: 0px;
@@ -332,9 +346,14 @@
                 font-size: 18px;
                 min-width: 175px;
             }
+
             .description {
                 font-size: 13px;
                 font-family: SVN-Gilroy-Light;
+            }
+
+            .url-description {
+                margin-bottom: 40px;
             }
         }
 
@@ -408,17 +427,20 @@
 
     .orther-works {
         border-top: 1px #efefef solid;
-        margin-top:80px;
+        margin-top: 80px;
         padding-top: 60px;
+
         .post {
             overflow: hidden;
             padding: 0px;
             margin-bottom: 25px;
+
             .img-project {
                 overflow: hidden;
                 display: block;
                 position: relative;
                 margin-bottom: 19px;
+
                 img {
                     width: 100%;
                 }
@@ -507,5 +529,139 @@
             }
 
         }
+
+        .work-next {
+            right: -50px;
+        }
+
+        .work-prev {
+            left: -50px;
+        }
+    }
+
+    .sota-social {
+        margin-top: 11px;
+        ul li a svg path {
+            fill: #475b87;
+        }
+        ul li a:hover svg path {
+            fill: #17a2b8;
+        }
+    }
+}
+
+$fuschia: #91b8fa;
+$button-bg: $fuschia;
+$button-text-color: #fff;
+$baby-blue: #f8faff;
+
+.bubbly-button {
+    display: inline-block;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: $button-bg;
+    color: $button-text-color;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:before,
+    &:after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 140%;
+        height: 100%;
+        left: -20%;
+        z-index: -1000;
+        transition: all ease-in-out 0.5s;
+        background-repeat: no-repeat;
+    }
+
+    &:before {
+        display: none;
+        top: -75%;
+        background-image:
+            radial-gradient(circle, $button-bg 20%, transparent 20%),
+            radial-gradient(circle, transparent 20%, $button-bg 20%, transparent 30%),
+            radial-gradient(circle, $button-bg 20%, transparent 20%),
+            radial-gradient(circle, $button-bg 20%, transparent 20%),
+            radial-gradient(circle, transparent 10%, $button-bg 15%, transparent 20%),
+            radial-gradient(circle, $button-bg 20%, transparent 20%),
+            radial-gradient(circle, $button-bg 20%, transparent 20%),
+            radial-gradient(circle, $button-bg 20%, transparent 20%),
+            radial-gradient(circle, $button-bg 20%, transparent 20%);
+        background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+        //background-position: 0% 80%, -5% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 85% 30%;
+    }
+
+    &:after {
+        display: none;
+        bottom: -75%;
+        background-image:
+            radial-gradient(circle, $button-bg 20%, transparent 20%),
+            radial-gradient(circle, $button-bg 20%, transparent 20%),
+            radial-gradient(circle, transparent 10%, $button-bg 15%, transparent 20%),
+            radial-gradient(circle, $button-bg 20%, transparent 20%),
+            radial-gradient(circle, $button-bg 20%, transparent 20%),
+            radial-gradient(circle, $button-bg 20%, transparent 20%),
+            radial-gradient(circle, $button-bg 20%, transparent 20%);
+        background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+        //background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    }
+
+    &:active {
+        transform: scale(0.9);
+        background-color: darken($button-bg, 5%);
+        box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+    }
+
+    &.animate {
+        &:before {
+            display: block;
+            animation: topBubbles ease-in-out 0.75s forwards;
+        }
+
+        &:after {
+            display: block;
+            animation: bottomBubbles ease-in-out 0.75s forwards;
+        }
+    }
+}
+
+
+@keyframes topBubbles {
+    0% {
+        background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    }
+
+    50% {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+
+    100% {
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+@keyframes bottomBubbles {
+    0% {
+        background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+    }
+
+    50% {
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
+
+    100% {
+        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
     }
 }
