@@ -206,7 +206,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
-            max-width: 800px;
+            // max-width: 800px;
             @media (max-width: 767px) {
                 width: 100%;
                 padding-left: 20px;
@@ -219,6 +219,11 @@
                 line-height: 55px;
                 letter-spacing: -0.5px;
                 margin-bottom: 50px;
+                span{
+                    @media (min-width: 768px) {
+                        display: block;
+                    }
+                }
                 @media (max-width: 1200px) {
                     font-size: 35px;
                     line-height: 40px;
@@ -254,6 +259,7 @@
                 color: #ffffff;
                 border-radius: 3px;
                 padding: 6px 45px;
+                @include sotaRipple;
                 @media (max-width: 767px) {
                     padding: 2px 20px;
                 }
@@ -278,6 +284,36 @@
     }
     .swiper-pagination{
         @include sota-swp(#000d31);
+    }
+}
+.swiper-flip{
+    // .swiper-pagination{
+    //     @include sota-swp(#000d31);
+    // }
+    .swiper-pagination-bullet {
+        background: none;
+        width: auto;
+        height: auto;
+    }
+    .swiper-pagination-bullet-active .path{
+        display: inline-block !important;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 0;
+      animation: dash linear 120s;
+      animation-iteration-count: unset;
+    }
+    .path {
+        display: none;
+    }
+    
+    @keyframes dash {
+      from {
+        stroke-dashoffset: 1000;
+      }
+    
+      to {
+        stroke-dashoffset: 0;
+      }
     }
 }
 .sota-head{
