@@ -66,4 +66,25 @@ $(function() {
             }
         });
     });
+    // Mega menu
+    $('.has-dropdown').hover(function () {
+            // over
+            $('.mega').addClass('show');
+        }, function () {
+            // out
+            // $('.mega').removeClass('show');
+        }
+    );
+    // $(html).hover(function (e) {
+    //         // over
+    //         $('.mega').removeClass('show');
+    //         $('.has-dropdown').preventDefault()
+    //         $('.mega').stopPropagation()
+    //     }, function () {
+    //         // out
+    //     }
+    // );
+    $('.mega').mouseleave(function () { 
+        $(this).removeClass('show')
+    });
 });
