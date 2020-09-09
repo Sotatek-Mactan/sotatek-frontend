@@ -62,7 +62,7 @@ $(document).ready(function () {
             clickable: true,
         },
         breakpoints: {
-            320: {
+            480: {
                 slidesPerView: 1,
                 spaceBetween: 10,
             },

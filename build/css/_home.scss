@@ -354,6 +354,12 @@
     // .swiper-pagination{
     //     @include sota-swp(#000d31);
     // }
+    .swiper-button-prev,
+    .swiper-button-next{
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
     .swiper-pagination-bullet {
         background: none;
         width: auto;
@@ -1432,4 +1438,14 @@
     @media (max-width: 767px) {
         display: none;
     }
+}
+.sota-map,
+.services,
+.sota-tech,
+.sota-work,
+.sota-aboutus,
+.sota-client,
+.sota-news,
+.sota-wrap{
+    overflow: hidden;
 }
