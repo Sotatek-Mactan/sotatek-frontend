@@ -1,3 +1,5 @@
+$color: #0cf;
+
 .sota-our-work {
     .list-tech-filter {
         text-align: center;
@@ -8,12 +10,13 @@
         }
 
         .active {
+            background-color: #001742;
+            color: #fff;
 
-            background-color: #475b87;
-            color: #e1e8f5;
         }
 
     }
+
 
     .button-tech-filter {
         border-radius: 3px;
@@ -25,12 +28,16 @@
         border: none;
         margin-right: 5px;
 
+        &:hover {
+            color: #fff;
+            background-color: #475b87;
+            
+        }
 
     }
 
     .list-project {
         margin-top: 40px;
-
     }
 
     .post {
@@ -541,17 +548,18 @@
 
     .sota-social {
         margin-top: 11px;
+
         ul li a svg path {
             fill: #475b87;
         }
+
         ul li a:hover svg path {
             fill: #17a2b8;
         }
     }
 }
 
-$fuschia: #91b8fa;
-$button-bg: $fuschia;
+$button-bg: #91b8fa;
 $button-text-color: #fff;
 $baby-blue: #f8faff;
 
