@@ -54,7 +54,6 @@ function hideAllTabPanels() {
 */
 var tabNavLinkEvent = function() {
 //   event.preventDefault()
-AOS.init();
   //get this link data value
   var thisLink = this.getAttribute("data-tab");
   //get this link href value
@@ -70,6 +69,8 @@ AOS.init();
   //fire the position indicator function
   
   positionIndicator();
+  AOS.refresh()
+
 };
 
 for (var i = 0; i < tabNavLinks.length; i++) {
