@@ -1,4 +1,10 @@
 .our-services {
+    .sota-banner-item {
+        height: 480px;
+        img {
+            height: 100%!important;
+        }
+    }
     .menu-development {
 
         &:hover {
