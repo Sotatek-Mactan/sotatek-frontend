@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="20" cy="20" r="20"></circle>
+        <filter x="-50.0%" y="-25.0%" width="200.0%" height="200.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.143602491 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Livestreaming" transform="translate(-646.000000, -2612.000000)">
+            <g id="Group-10" transform="translate(656.000000, 2612.000000)">
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#36C2E1" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="effect" transform="translate(7.000000, 10.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M10.701265,5.29758945 L9.23083577,0.885525889 C9.05438426,0.35801535 8.55789815,0 7.99913504,0 C7.44037193,0 6.94561574,0.35801535 6.76916423,0.887255432 L5.298735,5.29931899 L0.885717375,6.76770079 C0.35636285,6.94584369 0,7.44049292 0,7.99913523 C0,8.55777754 0.35636285,9.05242676 0.885717375,9.23056967 L5.298735,10.700681 L6.76916423,15.1127446 C6.94561574,15.6419847 7.44210185,16 7.99913504,16 C8.55616823,16 9.05265434,15.6419847 9.22910585,15.1127446 L10.6995351,10.700681 L15.1125527,9.23056967 C15.6419072,9.05242676 16,8.55777754 16,7.99913523 C16,7.44049292 15.6419072,6.94584369 15.1125527,6.76770079 L10.701265,5.29758945 Z" id="Path"></path>
+                    <path d="M21.7648024,20.0897155 L22.8456174,16.8468271 L26.0880624,15.7676422 C26.6320252,15.5827407 27,15.0742615 27,14.5 C27,13.9257385 26.6320252,13.4172593 26.0880624,13.2341357 L22.8456174,12.1549508 L21.7648024,8.91206236 C21.5834815,8.36802516 21.0732941,8 20.5008888,8 C19.9284835,8 19.4182962,8.36802516 19.2369752,8.91206236 L18.1561603,12.1549508 L14.9119376,13.2341357 C14.3679748,13.4172593 14,13.9257385 14,14.5 C14,15.0742615 14.3679748,15.5827407 14.9119376,15.7658643 L18.1543826,16.8450492 L19.2351976,20.0879376 C19.4165185,20.6319748 19.9267059,21 20.4991112,21 C21.0715165,21 21.5834815,20.6319748 21.7648024,20.0897155 L21.7648024,20.0897155 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -70,6 +70,9 @@
                             fill: #333333;
                             transition: ease-in-out 0.2s;
                         }
+                        @media (max-width: 992px) {
+                            display: none;
+                        }
                     }
                     &::before{
                         content: '';
@@ -172,8 +175,9 @@
             list-style: none;
             li{
                 a{
-                    text-align: center;
+                    // text-align: center;
                     padding: 20px;
+                    padding-left: 30%;
                     display: block;
                     text-decoration: none;
                     font-size: 20px;
