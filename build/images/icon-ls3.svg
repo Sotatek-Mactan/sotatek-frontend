@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="20" cy="20" r="20"></circle>
+        <filter x="-50.0%" y="-25.0%" width="200.0%" height="200.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.143602491 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Livestreaming" transform="translate(-646.000000, -2442.000000)">
+            <g id="Group-9" transform="translate(656.000000, 2442.000000)">
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#36C2E1" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="notification-(4)" transform="translate(10.000000, 9.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M8.92857143,21.4285714 C10.5130469,21.4285714 11.8384892,20.1989746 12.1428571,18.5714286 L5.71428571,18.5714286 C6.01881385,20.1989746 7.34425618,21.4285714 8.92857143,21.4285714 Z" id="Path"></path>
+                    <path d="M15.1889508,10.8721633 C15.1853543,10.8721633 15.1817578,10.8729626 15.1781612,10.8729626 C11.7328667,10.8729626 8.92856868,8.13162667 8.92856868,4.76190476 C8.92856868,3.83555093 9.14648456,2.95987081 9.52591655,2.17243012 C9.32941622,2.15420674 9.13030025,2.14285714 8.92856868,2.14285714 C5.47706203,2.14285714 2.67897611,4.87875803 2.67897611,8.25391496 L2.67897611,10.6878516 C2.67897611,12.4155535 1.90490875,14.0463838 0.546898709,15.1690383 C0.0942287092,15.547093 -0.106685489,16.1494228 0.0558114172,16.737046 C0.245118723,17.4205816 0.936139367,17.8571429 1.66116335,17.8571429 L16.1915601,17.8571429 C16.9522223,17.8571429 17.6692359,17.3751831 17.8235589,16.6462489 C17.9432247,16.0822841 17.7378965,15.5191185 17.2906213,15.1516142 C15.9924441,14.0874663 15.2415906,12.5237746 15.1889508,10.8721633 L15.1889508,10.8721633 Z" id="Path"></path>
+                    <path d="M20,4.28579278 C20,6.65273314 17.9214133,8.57142857 15.3570578,8.57142857 C12.7928724,8.57142857 10.7142857,6.65273314 10.7142857,4.28579278 C10.7142857,1.91885237 12.7928724,0 15.3570578,0 C17.9214133,0 20,1.91885237 20,4.28579278 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

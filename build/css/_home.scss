@@ -65,6 +65,15 @@
                         font-size: 12px;
                         padding: 11px 20px;
                     }
+                    svg{
+                        path{
+                            fill: #333333;
+                            transition: ease-in-out 0.2s;
+                        }
+                        @media (max-width: 992px) {
+                            display: none;
+                        }
+                    }
                     &::before{
                         content: '';
                         position: absolute;
@@ -82,6 +91,12 @@
                         color: #239ECA;
                         text-shadow: 0 0 0.5px #239ECA;
                         transition: ease-in-out 0.2s;
+                        svg{
+                            path{
+                                fill: #239ECA;
+                                transition: ease-in-out 0.2s;
+                            }
+                        }
                     }
                 }
                 &:first-child{
@@ -160,8 +175,9 @@
             list-style: none;
             li{
                 a{
-                    text-align: center;
+                    // text-align: center;
                     padding: 20px;
+                    padding-left: 30%;
                     display: block;
                     text-decoration: none;
                     font-size: 20px;
@@ -207,7 +223,8 @@
     #particles-js{
         width: 100%;
         height: calc(100vh - 60px);
-        background-image: radial-gradient(#00194a, #000d31);
+        // background-image: radial-gradient(#00194a, #000d31);
+        background-image: radial-gradient(#131313, #000000);
         // background-image: url('');
         background-size: cover;
         background-position: 50% 50%;
@@ -287,6 +304,10 @@
                         display: block;
                     }
                 }
+                @media (max-width: 1600px) {
+                    font-size: 45px;
+                    line-height: 50px;
+                }
                 @media (max-width: 1200px) {
                     font-size: 35px;
                     line-height: 40px;
@@ -302,6 +323,10 @@
                 color: white;
                 line-height: 40px;
                 margin-bottom: 40px;
+                @media (max-width: 1600px) {
+                    font-size: 20px;
+                    line-height: 25px;
+                }
                 @media (max-width: 1200px) {
                     font-size: 14pxpx;
                     line-height: 20px;
@@ -321,7 +346,7 @@
 .btn-read-more{
     background-color: #239ECA;
     font-family: SVN-Gilroy-Bold;
-    font-size: 14px;
+    font-size: 17px;
     font-stretch: normal;
     font-style: normal;
     line-height: 2.15;

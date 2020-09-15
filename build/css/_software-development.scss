@@ -1,0 +1,493 @@
+.our-services {
+    .sota-banner-item {
+        height: 480px;
+        img {
+            height: 100%!important;
+        }
+    }
+    .menu-development {
+
+        &:hover {
+            .menu__link {
+                &:not(:hover) {
+                    color: #241c69;
+                }
+            }
+        }
+
+        background-color: #e1e8f5;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12),
+        0 1px 2px 0 rgba(0, 0, 0, .24);
+    }
+
+    .menu__list {
+        display: flex;
+        text-align: center;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .menu__group {
+        flex-grow: 1;
+    }
+
+    .menu__link {
+        display: block;
+        font-weight: 700;
+        padding: 12px 80px;
+        color: #475b87;
+        text-decoration: none;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+        will-change: color;
+        transition: color .25s ease-out;
+
+        &:focus {
+            outline: 2px solid #fff;
+        }
+
+        &::before {
+            content: "";
+            width: 0;
+            height: 3px;
+            background-color: #001742;
+            will-change: width;
+            transition: width .1s ease-out;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &::after {
+            content: "";
+            width: 0;
+            height: 3px;
+            background-color: #001742;
+            will-change: width;
+            transition: width .1s ease-out;
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        &:hover {
+            background-color: #229fcc;
+            color: #fff;
+
+            &::before {
+                width: 100%;
+                transition-duration: .2s;
+            }
+
+            &::after {
+                width: 100%;
+                transition-duration: .2s;
+            }
+        }
+
+        &.active {
+            background-color: #229fcc;
+            color: #fff;
+
+            &::before {
+                width: 100%;
+            }
+
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    .sota-banner-item {
+        background-image: linear-gradient(to right, #003377 0%, #001742 100%);
+
+        .banner-item-content {
+            text-align: left;
+            width: 100%;
+
+            .title {
+                font-family: SVN-Gilroy-Medium;
+                font-size: 40px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.13;
+                letter-spacing: normal;
+                color: #ffffff;
+                margin-bottom: 60px;
+            }
+
+            .description {
+                opacity: 0.8;
+                font-family: SVN-Gilroy-Light;
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.75;
+                letter-spacing: normal;
+                color: #ffffff;
+                margin-top: 10px;
+            }
+        }
+
+        .image-banner {
+            height: auto;
+        }
+    }
+
+    .list-development {
+        margin-top: 10px;
+        margin-bottom: 150px;
+
+        .development {
+            margin-top: 100px;
+
+            .development-content {
+                text-align: left;
+
+                .title {
+                    font-family: SVN-Gilroy-Medium;
+                    font-size: 30px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.33;
+                    letter-spacing: normal;
+                    color: #001742;
+                    margin-bottom: 20px;
+                }
+
+                .description {
+                    font-family: SVN-Gilroy-Light;
+                    font-size: 16px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.75;
+                    letter-spacing: normal;
+                    color: #001742;
+
+                }
+
+                .brand {
+                    font-family: SVN-Gilroy-Medium;
+                    font-size: 15px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.67;
+                    letter-spacing: normal;
+                    color: #229fcc;
+                }
+
+                .btn-read-more {
+                    background-color: #239ECA;
+                    font-family: SVN-Gilroy-Bold;
+                    font-size: 14px;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 2.15;
+                    letter-spacing: normal;
+                    color: #ffffff;
+                    border-radius: 3px;
+                    padding: 6px 45px;
+                    @include sotaRipple;
+
+                    @media (max-width: 767px) {
+                        padding: 2px 20px;
+                    }
+
+                    span {
+                        margin-right: 5px;
+                    }
+
+                    svg {
+                        vertical-align: baseline;
+                        transition: ease-in-out 0.2s;
+                    }
+
+                    &:hover {
+                        span {
+                            text-shadow: 0 0 2px white;
+                        }
+
+                        svg {
+                            transform: translateX(10px);
+                            transition: ease-in-out 0.2s;
+                        }
+                    }
+                }
+            }
+
+            .development-image {
+                width: 100%;
+                .col-md-4 {
+                    padding :0px!important;
+                }
+                .block-content {
+                    border-radius: 5px;
+                    box-shadow: 5px 5px 10px 0 rgba(27, 57, 113, 0.09);
+                    background-color: #ffffff;
+                    padding-left: 20px;
+                    padding-right: 24px;
+                    margin-bottom: 10px;
+                    margin-right: 10px;
+                    padding-bottom: 15px;
+                    height: 160px;
+                    .img-block {
+                        margin-top: 30px;
+                        margin-bottom: 39px;
+                    }
+
+                    .title {
+                        font-family: SVN-Gilroy-Light;
+                        font-size: 15px;
+                        font-weight: 500;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.67;
+                        letter-spacing: normal;
+                        color: #475b87;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+
+            .development-image.right {
+                float: right;
+            }
+        }
+    }
+
+    .btn-sota-larrow {
+        margin-top: 40px;
+        background-color: #239ECA;
+        font-size: 14px;
+        line-height: 26px;
+        font-family: SVN-Gilroy-Light;
+        color: white;
+        padding-left: 20px;
+        padding-right: 15px;
+        outline: none;
+        box-shadow: none;
+        transition: ease-in 0.2s;
+
+        img {
+            width: 14px;
+            height: 7px;
+            margin-left: 5px;
+            vertical-align: baseline;
+            transition: ease-out 0.2s;
+        }
+
+        @media (max-width: 767px) {
+            line-height: 20px;
+        }
+
+        &:hover {
+            color: white;
+            text-shadow: 0 0 2px white;
+
+            img {
+                margin-left: 17px;
+                transition: ease-in 0.2s;
+            }
+        }
+    }
+
+    $base-unit: 11px;
+    $indicator-speed: 0.8s;
+
+    .ns-TabsModule {
+        width: 100%;
+    }
+
+    .ns-TabNav {
+        position: relative;
+        /* wipe out any unwanted whitespace around inline elements */
+        display: flex;
+        width: 100%;
+    }
+
+    .ns-TabNav_Link {
+        display: inline-block;
+        margin: 0px $base-unit;
+        text-decoration: none;
+        font-size: 12px;
+        line-height: calc($base-unit * 4);
+        color: #bbb;
+        text-transform: uppercase;
+
+        font-weight: 700;
+        padding: 12px 80px;
+        color: #475b87;
+        text-decoration: none;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+        will-change: color;
+        transition: color .25s ease-out;
+
+        flex-grow: 1;
+
+        span {
+            font-size: inherit;
+            line-height: inherit;
+            letter-spacing: 1px;
+            pointer-events: none;
+        }
+
+        &:focus {
+            outline: 2px solid #fff;
+        }
+
+        &::before {
+            content: "";
+            width: 0;
+            height: 3px;
+            background-color: #001742;
+            will-change: width;
+            transition: width .1s ease-out;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &::after {
+            content: "";
+            width: 0;
+            height: 3px;
+            background-color: #001742;
+            will-change: width;
+            transition: width .1s ease-out;
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        // &:hover {
+        //     background-color: #229fcc;
+        //     color: #fff;
+
+        //     &::before {
+        //         width: 100%;
+        //         transition-duration: .2s;
+        //     }
+
+        //     &::after {
+        //         width: 100%;
+        //         transition-duration: .2s;
+        //     }
+        // }
+
+        &.active {
+            background-color: #229fcc;
+            color: #fff;
+
+            &::before {
+                width: 100%;
+            }
+
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    .ns-TabNav_Indicator {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 2px;
+        background-color: #001742;
+        transition-property: transform, left, background-color;
+        transition-duration: $indicator-speed;
+        transform-origin: 0;
+        transform: translate3d(0, 0, 0) scaleX(0);
+        opacity: 0;
+        animation: fadeMeIn $indicator-speed forwards;
+        animation-delay: $indicator-speed;
+    }
+
+    .ns-TabPanel {
+        display: none;
+    }
+
+    @keyframes fadeMeIn {
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* prettify */
+
+    .ns-ScrollWrapper {
+        display: flex;
+        text-align: center;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        list-style: none;
+
+        position: relative;
+        overflow: hidden;
+        // overflow-x: scroll;
+        margin-bottom: 30px;
+        // overflow-y: hidden;
+        // -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+        // box-shadow: inset 0 -2px 0 0 #404040;
+
+        background-color: #e1e8f5;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12),
+            0 1px 2px 0 rgba(0, 0, 0, .24);
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    /** 
+* indicator color for each tab should you need,
+* could attach data-color attribute to tab link instead, JS maybe 
+* performance should dictate what to do
+*/
+
+    .ns-TabNav_Indicator {
+        [data-active-tab="B"] & {
+            background-color: black;
+        }
+
+        [data-active-tab="C"] & {
+            background-color: mediumaquamarine;
+        }
+
+        [data-active-tab="D"] & {
+            background-color: slateblue;
+        }
+
+        [data-active-tab="E"] & {
+            background-color: coral;
+        }
+
+        [data-active-tab="F"] & {
+            background-color: indianred;
+        }
+
+        [data-active-tab="G"] & {
+            background-color: white;
+        }
+    }
+
+}
+

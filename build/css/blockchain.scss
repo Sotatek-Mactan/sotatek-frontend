@@ -1,0 +1,309 @@
+.blockchain-tab {
+    .particlehead {
+        height: 480px;
+    }
+
+    .brand {
+        font-family: SVN-Gilroy-Light;
+        font-size: 15px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.67;
+        letter-spacing: normal;
+        color: #36c2e1;
+    }
+
+    .blockchain-content {
+        margin-top: 60px;
+        text-align: left;
+
+        .more {
+            display: none;
+        }
+
+        .logo {}
+
+        .brand {
+            font-family: SVN-Gilroy-Medium;
+            font-size: 15px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.67;
+            letter-spacing: normal;
+            color: #36c2e1;
+        }
+
+        .read-more-btn {
+            color: #36c2e1;
+            font-family: SVN-Gilroy-Medium;
+            font-size: 14px;
+            border: none;
+            background: none;
+            line-height: 1.71;
+        }
+
+        .introducion {
+            margin-top: 10px;
+            font-family: SVN-Gilroy-Medium;
+            font-size: 30px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 40px;
+            letter-spacing: normal;
+            color: #001955;
+        }
+
+        .image-introduction {
+            margin-top: 40px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .used-content {
+            margin-top: 60px;
+
+            .content-block {
+                border-bottom: solid 2px #e0e6eb;
+                margin-top: 29px;
+                padding-bottom: 35px;
+                text-align: left;
+
+                .title {
+                    object-fit: contain;
+                    font-family: SVN-Gilroy-Medium;
+                    font-size: 25px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.5;
+                    letter-spacing: normal;
+                    color: #001742;
+                    margin-top: 35px;
+                }
+
+                .detail {
+                    font-family: SVN-Gilroy-Light;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.71;
+                    letter-spacing: normal;
+                    color: #475b87;
+                    margin-top: 15px;
+                }
+
+                .benefit-item {
+                    margin-top: 70px;
+                }
+            }
+        }
+    }
+
+    .block-features {
+        background-color: #001742;
+        width: 100%;
+        padding: 80px 0px;
+
+        .title {
+            font-family: SVN-Gilroy-Medium;
+            font-size: 28px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: #ffffff;
+        }
+
+        .logos {
+            padding-top: 25px;
+        }
+
+        .item-feature {
+            margin-top: 15px;
+            display: flex;
+            border-radius: 2px;
+            box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.15);
+            background-color: #ffffff;
+            flex-wrap: wrap;
+            overflow: hidden;
+            .logo {
+                width: 50px;
+                height: 50px;
+                border-radius: 2px;
+                background-color: #229fcc;
+                padding: 12px 16px 15px 17px;
+
+                &.third {
+                    padding: 12px 16px 15px 11px;
+                }
+            }
+            .feature-detail {
+                height: 0px;
+                transition: height 0.75s;
+                font-family: SVN-Gilroy-Light;
+                font-size: 12px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.67;
+                letter-spacing: normal;
+                color: #001955;
+                padding: 0px 5px;
+            }
+
+            .name {
+                font-family: SVN-Gilroy-Light;
+                font-size: 12px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.67;
+                letter-spacing: normal;
+                color: #001955;
+                margin-top: 15px;
+                margin-left: 15px;
+            }
+            &:hover {
+                overflow: visible;
+                box-shadow: 5px 5px rgba(245, 227, 227, 0.89);
+                .feature-detail {
+                    height: 85px;
+                    padding-top: 5px;
+                }
+            }
+
+        }
+
+        .features-image {
+            margin-top: 50px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .tech-expertise {
+            margin-top: 80px;
+
+            .list-tech {
+                display: flex;
+                margin-top: 20px;
+
+                .tech-item {
+                    width: 60px;
+                    height: 60px;
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+
+    .blockchain-in-use-2 {
+        padding: 120px 80px 0px 80px;
+        background: url('../images/Bg-bl-3.png');
+        height: 822px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .title {
+            font-family: SVN-Gilroy-Medium;
+            font-size: 30px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: #001742;
+        }
+
+        .list-using {
+            margin-top: 40px;
+
+            .using-item {
+                display: flex;
+                margin-bottom: 20px;
+
+                .icon-using {
+                    width: 22px;
+                    height: 26px;
+                    margin-right: 15px;
+                }
+
+                .title-using {
+                    object-fit: contain;
+                    font-family: SVN-Gilroy-Medium;
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.5;
+                    letter-spacing: normal;
+                    color: #001742;
+                }
+            }
+        }
+
+        .button-nav {
+            .see-more-case {
+                width: 100%;
+
+                span {
+                    font-family: SVN-Gilroy-Bold;
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.56;
+                    letter-spacing: normal;
+                    color: #ffffff;
+                }
+
+                a {
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: left;
+                    width: 100%;
+                    height: 70px;
+                    border-radius: 5px;
+
+                    padding: 19px 77px 21px 50px;
+
+                    &.left {
+                        background-color: #36c2e1;
+                    }
+
+                    &.right {
+                        background-color: #fc694f;
+                    }
+
+                    img {
+                        margin-top: 6px;
+                        width: 15px;
+                        height: 18px;
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.particles-wrapper {
+    width: 100%;
+    height: 500px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+    #particles-blockchain-js {
+        height: 100%;
+    }
+}
