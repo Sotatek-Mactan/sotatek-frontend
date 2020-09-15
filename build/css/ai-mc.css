@@ -1,0 +1,57 @@
+.ai-mc {
+  margin-bottom: 100px; }
+  .ai-mc .ai-mc-content {
+    text-align: left;
+    margin-top: 60px; }
+    .ai-mc .ai-mc-content .brand {
+      font-family: SVN-Gilroy-Medium;
+      font-size: 15px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      color: #36c2e1; }
+    .ai-mc .ai-mc-content .introducion {
+      margin-top: 10px;
+      font-family: SVN-Gilroy-Medium;
+      font-size: 30px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 40px;
+      letter-spacing: normal;
+      text-align: left;
+      color: #001955; }
+    .ai-mc .ai-mc-content .image-introduction {
+      margin-top: 40px; }
+      .ai-mc .ai-mc-content .image-introduction img {
+        width: 100%; }
+    .ai-mc .ai-mc-content .used-content {
+      margin-top: 60px; }
+      .ai-mc .ai-mc-content .used-content .content-block {
+        border-bottom: solid 2px #e0e6eb;
+        margin-top: 29px;
+        padding-bottom: 35px;
+        text-align: left; }
+        .ai-mc .ai-mc-content .used-content .content-block .title {
+          object-fit: contain;
+          font-family: SVN-Gilroy-Medium;
+          font-size: 20px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          color: #001742; }
+        .ai-mc .ai-mc-content .used-content .content-block .detail {
+          font-family: SVN-Gilroy-Light;
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.71;
+          letter-spacing: normal;
+          color: #475b87; }
+
+/*# sourceMappingURL=ai-mc.css.map */
