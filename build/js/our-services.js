@@ -13,10 +13,13 @@ var tabNavCurrentLinkindicator = tabNavList.querySelector(".ns-TabNav_Indicator"
 //get all tab panels
 var tabPanels = document.querySelectorAll(".ns-TabPanel");
 //show tab panel A first because panel A nav link has indicator on page load
+if (window.location.hash.substring(1).length) {
    document.getElementById(window.location.hash.substring(1)).style.display = "block";
    console.log(window.location.hash.substring(1));
    tabsModule.setAttribute("data-active-tab", window.location.hash.substring(1))
-
+} else {
+   document.getElementById("software-development").style.display = "block";
+}
 
 /**
 * position indicator function
@@ -25,7 +28,7 @@ function positionIndicator() {
    //get left position of tab nav ul
    var tabNavListLeftPosition = tabNavList.getBoundingClientRect().left;
    //get tab module parent current data value
-   var tabsModuleSectionDataValue =  tabsModule.getAttribute("data-active-tab");
+   var tabsModuleSectionDataValue = tabsModule.getAttribute("data-active-tab");
    //get nav link span with data value that matches current tab module parent data value
    var tabNavCurrentLinkText = tabNavList.querySelector("[data-tab='" + tabsModuleSectionDataValue + "'] span");
    //get dimensions of current nav link span
@@ -72,11 +75,19 @@ var tabNavLinkEvent = function () {
    hideAllTabPanels();
    //get tab panel element with ID that matches this link href value and set its style to show it
    thisTabPanel.style.display = "block";
-  ;
-   let promise = new Promise(resolve => resolve( positionIndicator()));
-   promise.then()
+   ;
+   positionIndicator()
    AOS.refresh()
+   console.log(thisLink);
+   event.preventDefault()
+   if(history.pushState) {
+      history.pushState(null, null,  '#' + thisLink);
+  }
+  else {
+   window.location.hash = '#' + thisLink
+  }
   
+
 };
 
 for (var i = 0; i < tabNavLinks.length; i++) {
