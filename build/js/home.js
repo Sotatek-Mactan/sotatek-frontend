@@ -82,6 +82,25 @@ $(document).ready(function () {
             clickable: true,
         },
     });
+
+    var swiperWebDevelopment = new Swiper('.swiper-web-development', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: '.pagination-web-development',
+            clickable: true,
+        },
+        breakpoints: {
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+        }
+    });
     
     $(function() {
         $('a[data-modal]').on('click', function() {
