@@ -250,48 +250,7 @@
             }
         }
 
-        .button-nav {
-            .see-more-case {
-                width: 100%;
-
-                span {
-                    font-family: SVN-Gilroy-Bold;
-                    font-size: 18px;
-                    font-weight: bold;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 1.56;
-                    letter-spacing: normal;
-                    color: #ffffff;
-                }
-
-                a {
-                    display: flex;
-                    justify-content: space-between;
-                    text-align: left;
-                    width: 100%;
-                    height: 70px;
-                    border-radius: 5px;
-
-                    padding: 19px 77px 21px 50px;
-
-                    &.left {
-                        background-color: #36c2e1;
-                    }
-
-                    &.right {
-                        background-color: #fc694f;
-                    }
-
-                    img {
-                        margin-top: 6px;
-                        width: 15px;
-                        height: 18px;
-
-                    }
-                }
-            }
-        }
+        
     }
 
 }
@@ -305,5 +264,47 @@
 
     #particles-blockchain-js {
         height: 100%;
+    }
+}
+.button-nav.button-see-start {
+    .see-more-case {
+        width: 100%;
+
+        span {
+            font-family: SVN-Gilroy-Bold;
+            font-size: 18px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.56;
+            letter-spacing: normal;
+            color: #ffffff;
+        }
+
+        a {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            width: 100%;
+            height: 70px;
+            border-radius: 5px;
+
+            padding: 19px 77px 21px 50px;
+
+            &.left {
+                background-color: #36c2e1;
+            }
+
+            &.right {
+                background-color: #fc694f;
+            }
+
+            img {
+                margin-top: 6px;
+                width: 15px;
+                height: 18px;
+
+            }
+        }
     }
 }
