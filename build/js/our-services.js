@@ -21,23 +21,6 @@ if (window.location.hash.substring(1).length) {
    document.getElementById("software-development").style.display = "block";
 }
 
-var tabsModuleS = document.body.querySelector("#ns-TabsModule-s");
-//get tab nav
-var tabNavList = document.body.querySelector(".ns-TabNav-s");
-//get all tab nav links
-var tabNavLinksS = document.querySelectorAll(".ns-TabNav_Link-s");
-//get tab nav current nav link indicator
-var tabNavCurrentLinkindicatorS = tabNavList.querySelector(".ns-TabNav_Indicator-s");
-//get all tab panels
-var tabPanelsS = document.querySelectorAll(".ns-TabPanel-s");
-//show tab panel A first because panel A nav link has indicator on page load
-if (window.location.hash.substring(1).length) {
-   document.getElementById(window.location.hash.substring(1)).style.display = "block";
-   console.log(window.location.hash.substring(1));
-   tabsModuleS.setAttribute("data-active-tab", window.location.hash.substring(1))
-} else {
-   document.getElementById("software-development").style.display = "block";
-}
 
 /**
 * position indicator function
@@ -66,20 +49,11 @@ function positionIndicator() {
 /**
 * hide all tab panels function
 */
-function hideAllTabPanels() {
-   //loop through all tab panel elements
-   for (i = 0; i < tabPanelsS.length; i++) {
-      //remove style attribute from all tab panels to hide them
-      tabPanelsS[i].removeAttribute("style");
-   }
-};
-
 /**
 * tab nav link function
 * tab nav link event displays matching tab panel,
 * and positions current tab nav link indicator
 */
-let menuTab = ['software-development', 'ai-']
 var tabNavLinkEvent = function () {
    //get this link data value
 
@@ -99,48 +73,23 @@ var tabNavLinkEvent = function () {
    AOS.refresh()
    console.log(thisLink);
    event.preventDefault()
-   if(history.pushState) {
-      history.pushState(null, null,  '#' + thisLink);
-  }
-  else {
-   window.location.hash = '#' + thisLink
-  }
-  
+   if (history.pushState) {
+      history.pushState(null, null, '#' + thisLink);
+   }
+   else {
+      window.location.hash = '#' + thisLink
+   }
 
-};
-var tabNavLinkEventS = function () {
-   //get this link data value
-
-   var thisLink = this.getAttribute("data-tab");
-   //get this link href value
-   var thisHref = this.getAttribute("href");
-   //get tab panel element with ID that matches this link href value
-   var thisTabPanel = document.querySelector(thisHref);
-   //set tab module parent data to this link data value
-   tabsModuleS.setAttribute("data-active-tab", thisLink);
-   //fire hide all tab panels function
-   hideAllTabPanels();
-   //get tab panel element with ID that matches this link href value and set its style to show it
-   thisTabPanel.style.display = "block";
-   ;
-   
-   AOS.refresh()
-   console.log(thisLink);
-   event.preventDefault()
-   if(history.pushState) {
-      history.pushState(null, null,  '#' + thisLink);
-  }
-  else {
-   window.location.hash = '#' + thisLink
-  }
-  
 
 };
 
-for (var i = 0; i < tabNavLinksS.length; i++) {
-   //for each nav link, add click event that fires tab nav link click event function
-   tabNavLinksS[i].addEventListener("click", tabNavLinkEventS, false);
-}
+function hideAllTabPanels() {
+   //loop through all tab panel elements
+   for (i = 0; i < tabPanels.length; i++) {
+      //remove style attribute from all tab panels to hide them
+      tabPanels[i].removeAttribute("style");
+   }
+};
 
 for (var i = 0; i < tabNavLinks.length; i++) {
    //for each nav link, add click event that fires tab nav link click event function
@@ -304,4 +253,58 @@ function readmore(numb) {
       btnText[numb].style.display = "none";
       moreText[numb].style.display = "inline";
    }
+}
+var swiperWebDevelopment = new Swiper('.swiper-web-development', {
+   slidesPerView: 1,
+   spaceBetween: 10,
+   pagination: {
+      el: '.pagination-web-development',
+      clickable: true,
+   },
+   breakpoints: {
+      480: {
+         slidesPerView: 1,
+         spaceBetween: 10,
+      },
+      768: {
+         slidesPerView: 1,
+         spaceBetween: 20,
+      },
+   }
+});
+
+swiperWebDevelopment.on('slideChange', function () {
+
+   clickProgressEvent(swiperWebDevelopment.activeIndex)
+});
+
+let liProgressBar = document.querySelectorAll(".progressbar li");
+
+function clickProgressEvent(index) {
+   if ((!index && index != 0) || typeof (index) == "object") {
+      index = this.getAttribute("index") - 1
+      swiperWebDevelopment.slideTo(index)
+   }
+   let activePro = document.querySelectorAll(".progressbar .active");
+   let complePro = document.querySelectorAll(".progressbar .complete");
+   for (var i = 0; i < complePro.length; i++) {
+      //for each nav link, add click event that fires tab nav link click event function
+      complePro[i].className = "";
+   }
+   for (var i = 0; i < activePro.length; i++) {
+      //for each nav link, add click event that fires tab nav link click event function
+      activePro[i].className = "";
+   }
+   for (var i = 0; i < index - 1; i++) {
+      //for each nav link, add click event that fires tab nav link click event function
+      liProgressBar[i].className = "complete";
+   }
+
+   liProgressBar[index].className = "active"
+   if (index > 0)
+      liProgressBar[index - 1].className = "complete"
+}
+for (var i = 0; i < liProgressBar.length; i++) {
+   //for each nav link, add click event that fires tab nav link click event function
+   liProgressBar[i].addEventListener("click", clickProgressEvent, false);
 }
