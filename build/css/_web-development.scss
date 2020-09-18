@@ -1,0 +1,154 @@
+.web-development {
+    .sota-banner-item {
+        height: 515px;
+
+    }
+
+    .web-development-content {
+        margin-top: 80px;
+        margin-bottom: 80px;
+
+    }
+
+    .swiper-web-development {
+        height: 380px;
+        box-shadow: 0 10px 20px 0 rgba(27, 57, 113, 0.09);
+        background-color: #ffffff;
+        padding: 40px 40px 40px 0px;
+
+        .slide-item {
+            margin-left: 40px;
+
+            .info-item {
+                .brand {
+                    margin-bottom: 0px;
+                }
+
+                .title {
+                    font-family: SVN-Gilroy-Medium;
+                    font-size: 25px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.2;
+                    letter-spacing: normal;
+                    color: #001742;
+                }
+
+                .description {
+                    font-family: SVN-Gilroy-Light;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.71;
+                    letter-spacing: normal;
+                    color: #475b87;
+                    margin-top: 20px;
+                }
+
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .pagination-web-development {
+        width: 100%;
+        margin-top: 30px;
+        position: relative;
+    }
+
+    #ns-TabsModule-s {
+        .ns-ScrollWrapper {
+            .ns-TabNav-s {
+                width: auto;
+                flex-direction: column;
+
+                background: white;
+
+                .ns-TabNav_Link-s {
+                    padding: 15px 15px 15px 20px;
+                    text-transform: none;
+
+                }
+            }
+        }
+    }
+
+    .btn-secondary {
+        color: #fff;
+        background-color: #ff407b;
+        border-color: #ff407b;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 9px 16px;
+        border-radius: 2px;
+    }
+
+    .tab-vertical {
+        .nav.nav-tabs {
+            float: left;
+            display: block;
+            margin-right: 0px;
+            border-bottom: 0;
+            
+            .nav-item {
+                margin-bottom: 6px;
+            }
+        }
+
+        .nav-tabs {
+            .nav-link {
+                border: 1px solid transparent;
+                border-top-left-radius: .25rem;
+                border-top-right-radius: .25rem;
+                background: #fff;
+                padding: 17px 49px;
+                -webkit-border-radius: 4px 0px 0px 4px;
+                -moz-border-radius: 4px 0px 0px 4px;
+                border-radius: 4px 0px 0px 4px;
+                border: 1px solid transparent;
+                border-top-left-radius: 4px !important;
+                border-top-right-radius: 0px !important;
+
+                font-family: SVN-Gilroy-Medium;
+                font-size: 15px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.67;
+                letter-spacing: normal;
+                text-align: center;
+                color: #001955;
+              
+            }
+
+            .nav-link.active {
+            
+                position: relative;
+
+                &::before {
+                    content: url('../images/arrow-right.svg');
+                    position: absolute;
+                    top: 19px;
+                    left: 29px;
+                }
+            }
+        }
+
+        .tab-content {
+            overflow: auto;
+            -webkit-border-radius: 0px 4px 4px 4px;
+            -moz-border-radius: 0px 4px 4px 4px;
+            border-radius: 0px 4px 4px 4px;
+            background: #fff;
+            padding: 30px;
+        }
+    }
+
+}
