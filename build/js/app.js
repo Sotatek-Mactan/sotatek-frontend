@@ -22,7 +22,7 @@
 
 
         var initFuncStatic = function() {
-            alert("Main")
+            
         };
 
     };

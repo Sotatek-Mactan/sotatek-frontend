@@ -9,8 +9,24 @@
             left: -20%;
         }
     }
-
+   
     .banner{
+        @media (max-width: 768px) {
+            height: auto;
+            text-align: center;
+            .particlehead {
+                position:  static;
+                padding-top: 100%;
+                height: auto;
+            }
+            .banner-content {
+                top: 24%;
+            }
+            .logo {
+                left: 16%;
+                top: 42%;
+            }
+        }
         position: relative;
         background-image: linear-gradient(to right, #037 0%, #001742 100%);
         &-content{
@@ -32,7 +48,7 @@
                     line-height: 30px;
                 }
             }
-            &__desc{
+            &__desc {
                 font-size: 16px;
                 line-height: 28px;
                 color: white;

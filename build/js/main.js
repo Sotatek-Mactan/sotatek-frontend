@@ -24,7 +24,7 @@
     // Init func
     $.ui.demo = new function() {
         this.init = function() {
-            alert("hihi")
+            
         }
     };
 

@@ -50,6 +50,10 @@ $(document).ready(function () {
             },
             768: {
                 slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            960: {
+                slidesPerView: 2,
                 spaceBetween: 100,
             },
         }
