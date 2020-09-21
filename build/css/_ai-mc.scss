@@ -14,14 +14,7 @@
         text-align: left;
         margin-top: 60px;
 
-        @media (max-width: 767px) {
-            text-align: center;
-
-            .introducion {
-                text-align: center;
-            }
-         
-        }
+    
 
         .brand {
             font-family: SVN-Gilroy-Medium;
@@ -98,6 +91,14 @@
                     color: #475b87;
                 }
             }
+        }
+        @media (max-width: 767px) {
+            text-align: center;
+
+            .introducion {
+                text-align: center;
+            }
+         
         }
     }
 

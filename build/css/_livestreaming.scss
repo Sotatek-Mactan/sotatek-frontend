@@ -12,10 +12,19 @@
    
     .banner{
         @media (max-width: 768px) {
-            height: 300px;
+            height: auto;
             text-align: center;
             .particlehead {
-                display: none;
+                position:  static;
+                padding-top: 100%;
+                height: auto;
+            }
+            .banner-content {
+                top: 24%;
+            }
+            .logo {
+                left: 16%;
+                top: 42%;
             }
         }
         position: relative;

@@ -132,8 +132,12 @@ positionIndicator();
 var site = site || {};
 site.window = $(window);
 site.document = $(document);
-site.Width = 480;
-site.Height = 480;
+let withHeight = 480
+if(screen.width<768) {
+   withHeight=300
+}
+site.Width = withHeight;
+site.Height = withHeight;
 
 var Background = function () {
 
