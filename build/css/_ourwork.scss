@@ -31,7 +31,7 @@ $color: #0cf;
         &:hover {
             color: #fff;
             background-color: #475b87;
-            
+
         }
 
     }
@@ -156,6 +156,10 @@ $color: #0cf;
 
         .tech-title {
             margin-bottom: 22px;
+
+            @media (max-width: 767px) {
+                margin-top: 10px;
+            }
         }
 
         .project-title {
@@ -354,6 +358,16 @@ $color: #0cf;
                 min-width: 175px;
             }
 
+            .sota-social {
+                @media (max-width: 767px) {
+                    ul {
+                        justify-content: left;
+                    }
+
+                    margin-bottom: 15px;
+                }
+            }
+
             .description {
                 font-size: 13px;
                 font-family: SVN-Gilroy-Light;
@@ -507,34 +521,42 @@ $color: #0cf;
                 text-align: center;
             }
 
-            &:hover {
-                .img-project {
-                    img {
-                        transform: scale(1.2);
-                        transition: ease-in-out 0.3s;
-                        opacity: 0.3;
+            @media (min-width: 767px) {
+                &:hover {
+                    .img-project {
+                        img {
+                            transform: scale(1.2);
+                            transition: ease-in-out 0.3s;
+                            opacity: 0.3;
+                        }
+
+                        background: #021a51;
                     }
 
-                    background: #021a51;
-                }
+                    .middle {
+                        opacity: 1;
+                        z-index: 999;
+                    }
 
-                .middle {
-                    opacity: 1;
-                    z-index: 999;
-                }
+                    &::after {
+                        background-color: rgba($color: #000000, $alpha: 0);
+                        transition: ease-in-out 0.2s;
+                    }
 
-                &::after {
-                    background-color: rgba($color: #000000, $alpha: 0);
-                    transition: ease-in-out 0.2s;
-                }
+                    .title::before {
+                        width: 100%;
+                        height: 100%;
+                    }
 
-                .title::before {
-                    width: 100%;
-                    height: 100%;
                 }
-
             }
 
+            @media (max-width: 767px) {
+                .title {
+                    font-size: 14px;
+            
+                }
+            }
         }
 
         .work-next {

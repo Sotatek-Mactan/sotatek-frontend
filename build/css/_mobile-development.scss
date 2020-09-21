@@ -1,0 +1,93 @@
+.mobile-development {
+    .our-technologies {
+        height: auto!important;
+
+        @media (max-width: 767px) {
+            text-align: center;
+        }
+    }
+
+    .mobile-development-content {
+
+        .choose-our-services {
+            margin-bottom: 120px;
+
+            .list-benefit {
+                margin-top: 60px;
+
+                .title {
+                    font-family: SVN-Gilroy-Medium;
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.5;
+                    letter-spacing: normal;
+                    color: #001742;
+                    margin-top: 35px;
+                    margin-bottom: 15px;
+                }
+
+                .description {
+                    font-family: SVN-Gilroy-Medium;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.71;
+                    letter-spacing: normal;
+                    color: #475b87;
+                }
+            }
+        }
+
+        .what-we-offer {
+            background-color: #001742;
+
+            .introduction {
+                color: #ffffff;
+            }
+
+            .list-offer {
+                margin-top: 80px;
+                padding-bottom: 120px;
+
+                .offer {
+                    background-color: #fff;
+                    padding: 30px;
+                    border-radius: 5px;
+                    margin-bottom: 60px;
+
+                    .title {
+                        font-family: SVN-Gilroy-Medium;
+                        font-size: 25px;
+                        font-weight: 500;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.2;
+                        letter-spacing: normal;
+                        color: #001742;
+
+                        margin-top: 20px;
+                        margin-bottom: 15px;
+                    }
+
+                    .description {
+                        font-family: SVN-Gilroy-Medium;
+                        font-size: 14px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.71;
+                        letter-spacing: normal;
+                        color: #475b87;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

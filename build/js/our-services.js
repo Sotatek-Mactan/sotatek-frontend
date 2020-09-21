@@ -17,10 +17,11 @@ if (window.location.hash.substring(1).length) {
    document.getElementById(window.location.hash.substring(1)).style.display = "block";
    console.log(window.location.hash.substring(1));
    tabsModule.setAttribute("data-active-tab", window.location.hash.substring(1))
+   document.querySelector("[data-tab='" + window.location.hash.substring(1) + "']").className += " active"
 } else {
+   document.querySelector("[data-tab='" + "software-development" + "']").className += " active"
    document.getElementById("software-development").style.display = "block";
 }
-
 
 /**
 * position indicator function
@@ -56,8 +57,13 @@ function positionIndicator() {
 */
 var tabNavLinkEvent = function () {
    //get this link data value
-
    var thisLink = this.getAttribute("data-tab");
+   for (var i = 0; i < tabNavLinks.length; i++) {
+      //for each nav link, add click event that fires tab nav link click event function
+     console.log(tabNavLinks[i].classList.remove("active"))
+   }
+   this.className += " active"
+
    //get this link href value
    var thisHref = this.getAttribute("href");
    //get tab panel element with ID that matches this link href value
