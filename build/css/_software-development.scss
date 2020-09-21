@@ -123,7 +123,9 @@
         .banner-item-content {
             text-align: left;
             width: 100%;
-
+            @media (max-width: 767px) {
+                text-align: center!important;
+            }
             .title {
                 font-family: SVN-Gilroy-Medium;
                 font-size: 40px;
@@ -157,14 +159,21 @@
 
     .list-development {
         margin-top: 10px;
-        margin-bottom: 150px;
-
+        margin-bottom: 80px;
+        .second-row {
+            @media (max-width: 767px) {
+                display: flex;
+                flex-direction:column-reverse;
+            }
+        }
         .development {
             margin-top: 100px;
 
             .development-content {
                 text-align: left;
-
+                @media (max-width: 767px) {
+                    text-align: center!important;
+                }
                 .title {
                     font-family: SVN-Gilroy-Medium;
                     font-size: 30px;
@@ -247,7 +256,9 @@
                     margin-right: 10px;
                     padding-bottom: 15px;
                     height: 160px;
-
+                    @media (max-width: 767px) {
+                        text-align: center!important;
+                    }
                     .img-block {
                         margin-top: 30px;
                         margin-bottom: 39px;
@@ -321,6 +332,9 @@
         /* wipe out any unwanted whitespace around inline elements */
         display: flex;
         width: 100%;
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+        }
     }
 
     .ns-TabNav_Link {
@@ -353,6 +367,9 @@
 
         &:focus {
             outline: 2px solid #fff;
+            background-color: #229fcc;
+            color: #fff;
+
         }
 
         &::before {
@@ -462,6 +479,9 @@
         &::-webkit-scrollbar {
             display: none;
         }
+        @media (max-width: 767px) {
+            margin-bottom: 10px;
+        }
     }
 
     /** 
@@ -510,6 +530,7 @@
             width: auto !important;
             margin-right: 14%;
         }
+        
     }
 }
 

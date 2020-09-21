@@ -18,6 +18,10 @@
         margin-top: 60px;
         text-align: left;
 
+        @media (max-width: 767px) {
+            text-align: center;
+        }
+
         .more {
             display: none;
         }
@@ -100,6 +104,10 @@
 
                 .benefit-item {
                     margin-top: 70px;
+
+                    @media (max-width: 767px) {
+                        text-align: center;
+                    }
                 }
             }
         }
@@ -133,6 +141,7 @@
             background-color: #ffffff;
             flex-wrap: wrap;
             overflow: hidden;
+
             .logo {
                 width: 50px;
                 height: 50px;
@@ -143,7 +152,21 @@
                 &.third {
                     padding: 12px 16px 15px 11px;
                 }
+
+                @media (max-width: 767px) {
+                    position: relative;
+
+                    &.third {
+                        img {
+                            position: absolute;
+                            top: 20%;
+                            left: 22%;
+                        }
+                    }
+                }
+
             }
+
             .feature-detail {
                 height: 0px;
                 transition: height 0.75s;
@@ -170,9 +193,11 @@
                 margin-top: 15px;
                 margin-left: 15px;
             }
+
             &:hover {
                 overflow: visible;
                 box-shadow: 5px 5px rgba(245, 227, 227, 0.89);
+
                 .feature-detail {
                     height: 85px;
                     padding-top: 5px;
@@ -212,6 +237,11 @@
         background-repeat: no-repeat;
         background-size: cover;
 
+        @media (max-width: 767px) {
+            height: auto;
+            padding: 30px 30px 0px 30px;
+        }
+
         .title {
             font-family: SVN-Gilroy-Medium;
             font-size: 30px;
@@ -250,7 +280,7 @@
             }
         }
 
-        
+
     }
 
 }
@@ -266,10 +296,15 @@
         height: 100%;
     }
 }
+
 .button-nav.button-see-start {
     .see-more-case {
         width: 100%;
-
+        @media (max-width: 767px) {
+            a {
+                margin-top: 10px;
+            }
+        }
         span {
             font-family: SVN-Gilroy-Bold;
             font-size: 18px;
